@@ -1,0 +1,66 @@
+<div data-path='studio' data-template="profile">
+    <div data-name="menu">{{ site.mySite.menu[1] }}</div>
+    
+    {% assign corporateIntro = site.data.corporate.info.intro %}
+    
+    <div data-name="frontpage">
+        <div data-name="founded">
+            {{ corporateIntro.founded-year }}
+        </div>
+        <div data-name="story">
+            {{ corporateIntro.details }}
+        </div>
+        <div data-name="body">
+           {{ corporateIntro.summary }}
+        </div>
+    </div>
+
+    <div data-name="employees">
+        
+        {% for employee in site.data.corporate.emploees %}
+        <div data-name="employee">
+            <div data-name="info">
+                <div data-name="name">{{ employee.name }}</div>
+                <div data-name="title">{{ employee.job-title }}</div>
+                <div data-name="mail"><a href="mailto:{{ employee.mail }}?subject= Hi, {{ employee.name }}" target="_top">{{ employee.mail }}</a></div>
+                <div data-name="phone">{{ employee.tel }}</div>
+
+                {% if employee.linkedin != "" %}
+                <div data-name="linkedin">https://www.linkedin.com/in/{{ employee.linkedin }}</div>
+                {% endif %}
+
+                {% if employee.behance != "" %}
+                <div data-name="behance">https://behance.net/{{ employee.behance }}</div>
+                {% endif %}
+                
+            </div>
+        </div>
+        {% endfor %}
+        <div data-name="image">assets/images/profile/profile_both.jpg</div>
+
+    </div>
+
+    <div data-name="service">
+        <div data-name="headline">Our services</div>
+        <div data-name="body">{{ site.data.corporate.services.intro }}</div>
+        
+        <div data-name="circles" data-type="round">
+            <div data-name="circle">Our services</div>
+            {% for service in site.data.corporate.services.srvice %}
+            <div data-name="circle">{{ service.title }}</div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div data-name="process">
+        <div data-name="headline">Process</div>
+        <div data-name="body">{{ site.data.corporate.process.intro }}</div>
+
+        <div data-name="circles" data-type="straight">
+            {% for proces in site.data.process %}
+            <div data-name="circle">{{ proces.title }}</div>
+            {% endfor %}
+        </div>
+    </div>
+    
+</div>

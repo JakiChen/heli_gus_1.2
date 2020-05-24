@@ -1,0 +1,117 @@
+{
+    "info": {
+        "basic-info": {
+            "name": "GUSTA Corp.",
+            "full-name": "Gusta Co,. Ltd.",
+            "cvr": "Member of Helicx Inc."
+        },
+        "contact": {
+            "addr-headquarters": "No.14, Xiaoguan Dongli <br> Chaoyang District, <br> Beijing, China",
+            "addr-xiamen": "",
+            "info-mail": "info@gusta.ltd",
+            "jobs-mail": "jobs@gusta.ltd",
+            "tel-headquarters": "+86 1511 000 4023"
+        },
+        "social": {
+            "behance": "gustaltd",
+            "instagram": "gustadzn",
+            "linkedin": "gustaltd",
+            "github": "gustaltd"
+        },
+        "intro": {
+            "founded-info": "GUSTA® is a global creative collective aim to balance innovation with aspiration, emotion with product, and create an original experience every time.",
+            "founded-year": "GUSTA® is founded in 2019 by Jaki Chen. Headquartered in Beijing.",
+            "slogan": "Strategy, branding & <br> experiences <br> for the <br> digital era.",
+            "summary": "GUSTA® is a global creative collective that creates the next generation of digital brands and experiences. Exploration through collaboration sits at the heart of our design process and we strive to create timeless work that surprises.",
+            "details": "GUSTA is a global team of specialists, focused on crafting word-class digital solutions for today’s modern companies. We exist to build the next generation of digital brands and experiences. Our process is defined by collaboration. We work with brands, start-ups, and people to create meaningful work with a strong sense of purpose. Our work is defined by the value we create rather than output we make. <br>  Our team of strategists, designers an developers are driven by passion and fuelled by curiosity.<br><br> We are a Global Creative Collective for the Digital Era."
+        }
+    },
+    "services": {
+        "intro": "We help brands shape their businesses and create unique design languages. We use a combination of our offerings to craft an approach that works best for each project. Independent of the output, we strive to offer new perspectives on established methods and solutions.",
+        "srvice": [{
+                "title": "Digital Products<br>& Platforms",
+                "intro": ""
+            },
+            {
+                "title": "Customer Experience",
+                "intro": "The best way to define customer experience is as the impression you leave with your customer, resulting in how they think of your brand, across every stage of the customer journey. Multiple touchpoints factor into the customer experience, and these touchpoints occur on a cross-functional basis."
+            },
+            {
+                "title": "Brand Identity",
+                "intro": ""
+            },
+            {
+                "title": "Creative Direction",
+                "intro": "No matter what we do, creativity is at the center of it all. From telling compelling stories to taking a jab at the sitting president of the United States – we’re interested in solving problems of all shapes and sizes, doing what the competition hasn’t done, can’t do or dare not do."
+            }
+        ]
+    },
+    "process": {
+        "intro": "We help brands shape their businesses and create unique design languages. We use a combination of our offerings to craft an approach that works best for each project. Independent of the output, we strive to offer new perspectives on established methods and solutions.",
+        "proces": [{
+                "title": "Foundation",
+                "intro": ""
+            },
+            {
+                "title": "Concept",
+                "intro": ""
+            },
+            {
+                "title": "Design",
+                "intro": ""
+            },
+            {
+                "title": "Implementation",
+                "intro": ""
+            }
+        ]
+    },
+    "principles": {
+        "intro": "At GUSTA® we use 5 principles that guide and define the type of work we believe in. The principles function as our northern star and inform the choices we make throughout our creative process.",
+        "name": [{
+                "title": "Purpose",
+                "intro": "Our work comes from a clear sense of purpose and authenticity. The foundation of our work comes from working with the questions — Why are you here and why do you exist? Once we’ve established the answer to those questions we look at the reason the target audience should care.",
+                "image": "roundrect"
+            },
+            {
+                "title": "Innovation",
+                "intro": "The exploration into purpose creates the foundation for an authentic end result that encapsulates the brand and what it stands for. This leads us to a design process where we create work with an authentic story that is driven by the value it creates.",
+                "image": "doubletriangle"
+            },
+            {
+                "title": "Collaboration",
+                "intro": "The output of our work is defined by the explorative nature of collaboration. Independent on skill-set and function we work with our clients to get the to core of the challenge and establish a way forward that keeps our clients highly involved in the process. We believe that by building a tight relationship with our collaborators and clients we create better results.",
+                "image": "rectbyrect"
+            },
+            {
+                "title": "Exploration",
+                "intro": "The nature of our collaborative process opens up the opportunity to explore alternate solutions that surprises the consumer — creating a stronger sense of attachment to the end result. We give ourselves time to explore and identify the path forward that we believe will make consumers look twice.",
+                "image": "triangle"
+            },
+            {
+                "title": "Timeless",
+                "intro": "We always strive for our work to be timeless, we reach that by making sure every details exists for a reason through craft and thought. The result of our efforts embodies a level of aesthetic quality that at its foundation feels honest and surprising in the eyes of the beholder.",
+                "image": "rect"
+            }
+        ]
+    },
+    "emploees": [{
+            "name": "Jaki Chen",
+            "job-title": "Founder, Design Director &<br> Strategic planner",
+            "mail": "jc@gusta.ltd",
+            "tel": "+86 1511 000 4023",
+            "wechat": "ching-fu",
+            "linkedin": "jakichen",
+            "behance": "jakichen"
+        },
+        {
+            "name": "",
+            "job-title": "",
+            "mail": "",
+            "tel": "",
+            "wechat": "",
+            "linkedin": "",
+            "behance": ""
+        }
+    ]
+}

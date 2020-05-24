@@ -1,0 +1,25 @@
+<div data-path='ethos' data-template="principles">
+    <div data-name="menu">{{ site.mySite.menu[2] }}</div>
+
+    <div data-name="frontpage">
+        <div data-name="founded">
+            {{ corporateIntro.founded-info }}
+        </div>
+
+        <div data-name="body">{{ site.data.corporate.principles.intro }}</div>
+    </div>
+
+    <div data-name="sections">
+        
+        {% for principle in site.data.corporate.principles.name %}
+        <div data-name="section">
+            <div data-name="headline">{{ principle.title }}</div>
+            <div data-name="body">{{ principle.intro }}</div>
+            <div data-name="image">{{ principle.image }}</div>
+        </div>
+        {% endfor %}
+        
+    </div>
+
+
+</div>

@@ -1,0 +1,35 @@
+<div data-path='projects' data-template="projects-0">
+    <div data-name="menu">{{ site.mySite.menu[3] }}</div>
+    
+    {% assign sortedProjects = site.projects | sort: 'date' | reverse %}
+    {% for project in sortedProjects limit:6 %}
+    <div data-path='{{ project.data-path  }}' data-template="case-0" >
+        <div data-name="info">
+            <div data-name="headline">
+                {{ project.title }}<br>
+                {{ project.type }}
+            </div>
+            <div data-name="client">{{ project.client }}</div>
+            <div data-name="project">{{ project.type }}</div>
+            <div data-name="year">{{ project.date | date: "%Y" }}</div>
+        </div>
+
+        <div data-name="overviewimage">{{ project.cover-image }}</div>
+
+        <div data-name="home">
+            <div data-name="headline">{{ project.title }}</div>
+
+            <div data-name="details">
+                {{ project.services }}<br><br>
+                {% if project.credits !="" %}Credits: {{ project.credits }}{% endif %}
+            </div>
+
+            <div data-name="body">
+                {{ project.summary }}
+            </div>
+        </div>
+        {{ project.content }}
+    </div>
+    {% endfor %}
+
+</div>

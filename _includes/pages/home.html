@@ -1,0 +1,32 @@
+<div data-path='home' data-template="home">
+    <!--<div data-name="menu">{{ site.mySite.menu[0] }}</div>-->
+    
+    {% assign corporateIntro = site.data.corporate.info.intro %}
+    <div data-name="frontpage">
+        <div data-name="founded">
+            {{ corporateIntro.founded-info }}
+        </div>
+        <div data-name="link" data-link="projects">Selected Projects</div>
+        <div data-name="body">
+            {{ corporateIntro.slogan }}
+        </div>
+    </div>
+
+    <div data-name="stories">
+        
+        {% for post in site.posts %}
+        <div data-name="story">
+            <div data-name="date">{{ post.date | date: '%B %d' }} — {{ post.date | date: '%Y' }}</div>
+            <div data-name="headline">
+                {{ post.title }}
+            </div>
+            <div data-name="body">{{ post.abstract }}</div>
+            <div data-name="image-tag-name">{{ post.tag }}</div>
+            <div data-name="images">
+                {{ post.content }}
+            </div>
+        </div>
+        {% endfor %}
+        
+    </div>
+</div>

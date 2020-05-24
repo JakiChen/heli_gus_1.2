@@ -1,0 +1,42 @@
+<div data-name="menu">
+
+    <div data-name="contact">
+
+        <div data-name="headline">Contact</div>
+        
+        {% assign corporateBasicInfo = site.data.corporate.info.basic-info %}
+        {% assign corporateContact = site.data.corporate.info.contact %}
+        {% assign corporateSocial = site.data.corporate.info.social %}
+        
+        <div data-name="columns">
+            <div data-name="column">
+                {{ corporateBasicInfo.name }}<br>
+                {{ corporateContact.addr-headquarters }}
+                <br>
+                {{ corporateContact.addr-xiamen }}
+            </div>
+            <div data-name="column">
+                {{ corporateContact.tel-headquarters }}<br>
+                <a href="mailto:{{ corporateContact.info-mail }}" target="_top">{{ corporateContact.info-mail }}</a>
+
+            </div>
+            <div data-name="column">
+                For job and Intern<br>
+                inquiries please write<br>
+                <a href="mailto:{{ corporateContact.jobs-mail }}" target="_top">{{ corporateContact.jobs-mail }}</a><br><br>
+            </div>
+        </div>
+    </div>
+
+    <div data-name="footer">
+        <div data-name="copyright" >Copyright {{ 'now' | date: "%Y" }} © {{ corporateBasicInfo.name }}</div>
+        <div data-name="cvr" >{{ corporateBasicInfo.cvr }}</div>
+    </div>
+
+    <div data-name="social">
+        <div data-name="behance" data-link="https://www.behance.net/{{ corporateSocial.behance }}/">Behance</div>
+        <div data-name="linkedin" data-link="https://www.linkedin.com/company/{{ corporateSocial.linkedin }}">LinkedIn</div>
+        <div data-name="instagram" data-link="https://www.instagram.com/{{ corporateSocial.instagram }}/">Instagram</div>
+        <div data-name="github" data-link="https://github.com/{{ corporateSocial.github }}/">Github</div>
+    </div>
+</div>

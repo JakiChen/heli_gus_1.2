@@ -1,0 +1,45 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- IE: Force to always use the latest version - if chrome frame is installed use this instead -->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="initial-scale=.8">
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="referrer" content="always" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<title>{{ site.title }}</title>
+<!-- Meta description and keywords -->
+<meta name="description" 
+      content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="keywords" content="{{ site.keywords  }}" />
+
+<!-- Apple touch icon (for more: http://mathiasbynens.be/notes/touch-icons) -->
+<link rel="apple-touch-icon-precomposed" href="assets/images/icons/apple-touch-icon.png">
+<!-- Android touch icon -->
+<link rel="manifest" href="assets/images/icons/site.webmanifest.txt">
+<!-- Safari, Chrome, Firefox, Opera, IE(favicon.ico) --> 
+<link rel="icon" href="assets/images/icons/favicon-v=2.png">
+<link rel="shortcut icon" href="assets/images/icons/favicon.ico"> 
+<!-- Windows touch icon -->
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="">
+<meta name="msapplication-config" content="assets/images/icons/browserconfig.xml">
+
+<!-- for Facebook -->
+<meta property="og:title" content="{{ site.title }}">
+<meta property="og:site_name" content="{{ site.mySite.name }}">
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/images/share.png">
+<meta property="og:description" content="{{ site.description }}">
+
+<!-- for Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="{{ site.mySite.twitter }}">
+<meta name="twitter:title" content="{{ site.title }}" />
+<meta name="twitter:description" content="{{ site.description }}" />
+<meta name="twitter:image" content="assets/images/share.png" />
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="css/main.css">
