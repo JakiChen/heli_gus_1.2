@@ -1,0 +1,73 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+#
+# Jekyll - Offical settings
+#
+#---------------------------------------------------------------
+# - Warning: ⚠️ Do not use "tabs" in configuration files
+# - This will either lead to parsing errors, or Jekyll will revert to the default settings. 
+# - Use spaces instead.
+#---------------------------------------------------------------
+
+title                       : GUSTA | Design, Strategy & Communication
+email                       : jakichen@gusta.ltd
+description                 : Born in the digital age, we tell stories and build products together with the brands that are shaping our future.
+baseurl                     : "" # the subpath of your site, e.g. /blog
+url                         : "" # the base hostname & protocol for your site, e.g. http://example.com
+
+keywords                    : visual identity, art direction, design, digital design, typography, digital products, digital experiences, creative direction
+github_username             : jakichen
+
+# Jekyll Official-Collections API
+collections:
+    projects:
+        project             : true
+
+collections_dir             : wp-content
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  
+# Site user config for SEO & Site Optimization
+# - All custom settings for the site
+
+mySite: 
+    name                    : GUSTA # for twitter card
+    twitter                 : ""
+    assetsUrl               : "" #Default Nil
+    cndUrl                  : "" #Option - if you want use CDN
+    menu                    : [Home, Studio, Ethos, Projects]
+    
+    google_analytics        : 'UA-162031185-2'
+
+
+
+# HTML Compression
+# - http://jch.penibelst.de/
+
+#compress_html:
+#    clippings               : all
+#    endings                 : all
+#    comments                : ["<!-- ", " -->"]
+#    blanklines              : true
+#    profile                 : false
+#    ignore:
+#    envs                    : [local]
